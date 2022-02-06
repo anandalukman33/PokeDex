@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/lukman/AndroidStudioProjects/PokeDex/app/src/main/res/drawable/ic_height.xml" value="0.103125" />
+        <entry key="..\:/Users/lukman/AndroidStudioProjects/PokeDex/app/src/main/res/drawable/ic_international_pok_mon_logo.xml" value="0.103125" />
+        <entry key="..\:/Users/lukman/AndroidStudioProjects/PokeDex/app/src/main/res/drawable/ic_launcher_background.xml" value="0.103125" />
+        <entry key="..\:/Users/lukman/AndroidStudioProjects/PokeDex/app/src/main/res/drawable/ic_weight.xml" value="0.103125" />
         <entry key="..\:/Users/lukman/AndroidStudioProjects/PokeDex/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
       </map>
     </option>
