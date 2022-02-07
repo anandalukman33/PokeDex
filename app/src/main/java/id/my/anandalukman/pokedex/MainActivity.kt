@@ -17,7 +17,9 @@ import androidx.navigation.compose.navArgument
 import androidx.navigation.compose.rememberNavController
 import id.my.anandalukman.pokedex.ui.theme.JetpackComposePokedexTheme
 import dagger.hilt.android.AndroidEntryPoint
+import id.my.anandalukman.pokedex.pokemondetail.PokemonDetailScreen
 import id.my.anandalukman.pokedex.pokemonlist.PokemonListScreen
+import java.util.*
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -37,8 +39,8 @@ class MainActivity : ComponentActivity() {
                         "pokemon_detail_screen/{dominantColor}/{pokemonName}",
                         arguments = listOf(
                             navArgument("dominantColor") {
-                            type = NavType.IntType
-                        },
+                                type = NavType.IntType
+                            },
                             navArgument("pokemonName") {
                                 type = NavType.StringType
                             }
@@ -51,6 +53,11 @@ class MainActivity : ComponentActivity() {
                         val pokemonName = remember {
                             it.arguments?.getString("pokemonName")
                         }
+                        PokemonDetailScreen(
+                            dominantColor = dominantColor,
+                            pokemonName = pokemonName?.toLowerCase(Locale.ROOT) ?: "",
+                            navController = navController
+                        )
                     }
                 }
             }
